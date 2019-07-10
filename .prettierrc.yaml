@@ -1,0 +1,10 @@
+useTabs: false
+tabWidth: 4
+jsxBracketSameLine: true
+parser: "babylon"
+semi: true
+endOfLine: "lf"
+overrides:
+  - files: "*.json"
+    options:
+      parser: json
