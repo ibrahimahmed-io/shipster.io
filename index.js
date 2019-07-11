@@ -10,8 +10,11 @@ const dbService = require("./src/db");
 
 dbService.connect(err => {
     if (err) {
+	console.log(err);
         process.exit(1);
     } else {
+	console.log('App started');
+	console.log(process.env.BOT_TOKEN);
         App.start(); //Start bot updates
     }
 });
